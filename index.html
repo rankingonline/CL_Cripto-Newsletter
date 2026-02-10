@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0f172a;
-            --card-bg: rgba(30, 41, 59, 0.7);
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --accent: #38bdf8;
-            --accent-glow: rgba(56, 189, 248, 0.2);
+            --bg-color: #0F1A4E;
+            --card-bg: rgba(25, 38, 96, 0.7);
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B8D4;
+            --accent: #FF6F00;
+            --accent-glow: rgba(255, 111, 0, 0.3);
         }
 
         * {
@@ -32,9 +33,9 @@
             flex-direction: column;
             align-items: center;
             padding: 2rem;
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.1) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 20%);
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(255, 111, 0, 0.15) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(42, 58, 128, 0.15) 0%, transparent 20%);
         }
 
         header {
@@ -90,7 +91,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 100%);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 100%);
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -98,7 +99,7 @@
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.3), 0 0 20px var(--accent-glow);
-            border-color: rgba(56, 189, 248, 0.3);
+            border-color: rgba(255, 111, 0, 0.5);
         }
 
         .card:hover::before {
@@ -139,6 +140,7 @@
                 opacity: 0;
                 transform: translateY(-20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -149,12 +151,14 @@
             h1 {
                 font-size: 2rem;
             }
+
             .grid {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Newsletter Archive</h1>
@@ -165,11 +169,14 @@
         <a href="newsletters/febrero-2026/index.html" class="card">
             <span class="card-date">Febrero 2026</span>
             <h2 class="card-title">Tendencias del Mercado & Análisis Bitcoin</h2>
-            <svg class="card-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            <svg class="card-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                </path>
             </svg>
         </a>
         <!-- Future cards will be added here -->
     </main>
 </body>
+
 </html>
